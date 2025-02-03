@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>Pong using SVG and JavaScript</title>
+      <script type="text/javascript" src="P16.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    <body onload="netipong()" cz-shortcut-listen="true">
+      <svg id="lienzo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid">
+          <rect id="fondo" width="800" height="600"></rect><!-- Workaround strange event behavior-->
+  
+          <text class="score" id="puntosJugador" x="200" y="50">0</text>
+          <text class="score" id="info" x="400" y="50">-</text>
+          <text class="score" id="puntosCPU" x="600" y="50">0</text>
+  
+          <rect id="paletaIzq" width="20" height="100" x="10" y="350"></rect>
+          <rect id="paletaDer" width="20" height="100" x="770" y="350"></rect>
+          <circle id="bola" r="5" cx="400" cy="300"></circle>
+      </svg>
+    <footer>
+        <p>PRACTICA 16 - Neti-Pong</p>
+        <p> Netica </p>
+    </footer>
+  
+    <app-weava-root id="weava-root" class="weava" ng-version="15.2.1"></app-weava-root>
+    </body>
+</html>
